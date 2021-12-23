@@ -13,21 +13,20 @@ import androidx.annotation.RequiresApi
 
 
 class Splashscreen : AppCompatActivity() {
-    private val splashscreen=4000
-
-    @RequiresApi(Build.VERSION_CODES.S)
+    lateinit var handler : Handler
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        handler = Handler()
+        handler.postDelayed({
 
-
-        Handler().postDelayed({
-            startActivity(intent)
-            val intent = Intent(this@Splashscreen, login::class.java)
+            val intent = Intent(this,postActivity::class.java)
             startActivity(intent)
             finish()
-        }, splashScreen.toString())
+        }, 3000 )
     }
 }
+
+
 
 
