@@ -22,7 +22,7 @@ class postActivity : AppCompatActivity() {
             authorList.add("author $i")}
 
 
-        val adapter.PostAdapter: PostAdapter = PostAdapter(titleList,descriptionList,authorList)
-        recyclerView.adapter=PostAdapter
+        val adapter:PostAdapter= PostAdapter(titleList,descriptionList,authorList)
+        recyclerView.adapter=adapter
     }
 }
