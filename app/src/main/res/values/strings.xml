@@ -4,4 +4,7 @@
     <string name="home_for_avid_readers_text">Home for avid readers</string>
     <string name="WelcomeToText">Welcome to</string>
     <string name="HomeForAvidReadersText">Home for avid readers</string>
+    <string name="title_text">Title</string>
+    <string name="description_text">Description</string>
+    <string name="author_text">Author</string>
 </resources>

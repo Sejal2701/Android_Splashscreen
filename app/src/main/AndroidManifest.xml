@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStudyJams">
         <activity
+            android:name=".postActivity"
+            android:exported="false" />
+        <activity
             android:name=".Splashscreen"
             android:exported="true">
             <intent-filter>
